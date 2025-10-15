@@ -1,0 +1,165 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36" version="28.0.6">
+  <diagram name="第 1 页" id="2ohQ0Db1i3qvRpTf64-b">
+    <mxGraphModel dx="1427" dy="2143" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-1" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;MessageRole&lt;/b&gt;&lt;/font&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="439" y="930" width="190" height="110" as="geometry">
+            <mxRectangle x="340" y="370" width="110" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-2" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;USER&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;ASSISTANT&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;SYSTEM&lt;/font&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="WLQ1DPpfnMQkfatMCHS5-1" vertex="1">
+          <mxGeometry y="26" width="190" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-3" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Message&lt;/font&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="414" y="750" width="240" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-4" value="str:content&lt;div&gt;est_tokens:int&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=18;" parent="WLQ1DPpfnMQkfatMCHS5-3" vertex="1">
+          <mxGeometry y="26" width="240" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-5" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="WLQ1DPpfnMQkfatMCHS5-3" vertex="1">
+          <mxGeometry y="80" width="240" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-6" value="to_dict():dict&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=18;" parent="WLQ1DPpfnMQkfatMCHS5-3" vertex="1">
+          <mxGeometry y="88" width="240" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-7" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=3;endSize=3.6666666666666665;endWidth=9.333333333333334;" parent="1" source="WLQ1DPpfnMQkfatMCHS5-6" target="WLQ1DPpfnMQkfatMCHS5-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="675" as="sourcePoint" />
+            <mxPoint x="750" y="625" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-8" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; margin: 0px 0px 0px 4px;&quot;&gt;&lt;b&gt;IEstTokensCalculator&lt;/b&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;Calc(str):int&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="737.5" y="760" width="255" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-10" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;EnglishEstTokensCalculator&lt;/b&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="730" y="888" width="270" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-13" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="WLQ1DPpfnMQkfatMCHS5-10" target="WLQ1DPpfnMQkfatMCHS5-8" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="537.5" y="840" as="sourcePoint" />
+            <mxPoint x="587.5" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-15" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&lt;i&gt;ContextManager&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;max_tokens:int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;max_messages:int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;estimated_tokens:int&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;AddMessage(str)&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;ClearContext()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;SetSystemMessage(sys_msg:str)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;GenerateMessages()&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="230" y="435" width="305" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-16" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=3;endSize=3.6666666666666665;endWidth=9.333333333333334;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="WLQ1DPpfnMQkfatMCHS5-15" target="WLQ1DPpfnMQkfatMCHS5-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="660" y="625" as="sourcePoint" />
+            <mxPoint x="660" y="675" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-17" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=3;endSize=3.6666666666666665;endWidth=9.333333333333334;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" parent="1" source="WLQ1DPpfnMQkfatMCHS5-15" target="WLQ1DPpfnMQkfatMCHS5-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="790" y="695" as="sourcePoint" />
+            <mxPoint x="815" y="745" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-18" value="[*]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="345" y="697" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-19" value="[*]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="495" y="690" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-20" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=3;endSize=3.6666666666666665;endWidth=9.333333333333334;" parent="1" source="WLQ1DPpfnMQkfatMCHS5-3" target="WLQ1DPpfnMQkfatMCHS5-8" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="850" y="835" as="sourcePoint" />
+            <mxPoint x="850" y="885" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-24" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;OllamaLLM&lt;/b&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;url:str&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;model:str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;stream:bool&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;options:Dict&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;SetUrl(str)&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;SetModel(str)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;SetStream(bool)&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;GeneratePayload()&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;SetSysMsg(str)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;SetOption(key:str,value:str)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;RemoveOption(key)&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="210" y="50" width="356" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-27" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=3;endSize=3.6666666666666665;endWidth=9.333333333333334;" parent="1" source="WLQ1DPpfnMQkfatMCHS5-24" target="WLQ1DPpfnMQkfatMCHS5-15" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="967" y="595" as="sourcePoint" />
+            <mxPoint x="930" y="655" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-31" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;ILLM&lt;/b&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Chat(str):str&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="640" y="140" width="140" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-32" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="WLQ1DPpfnMQkfatMCHS5-31" target="WLQ1DPpfnMQkfatMCHS5-24" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1000" y="375" as="sourcePoint" />
+            <mxPoint x="1050" y="325" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-33" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;ITTS&lt;/b&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;Work(str):Bytes&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="1235" y="130" width="130" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-39" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;GPT-SoVITS&lt;/b&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;headers:str&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;url:Str&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;SetSpeed(Str)&lt;br&gt;&lt;/span&gt;SetText(str)&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="1230" y="370" width="140" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="WLQ1DPpfnMQkfatMCHS5-39" target="WLQ1DPpfnMQkfatMCHS5-33" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1235" y="610" as="sourcePoint" />
+            <mxPoint x="1235" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-41" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;GPT-SoVITSData&lt;/b&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;text:Str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;text_lang:str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;ref_audio_path:str&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;font&gt;prompt_text:str&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;font&gt;prompt_lang:str&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;font&gt;speed_factor:float&lt;/font&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;SetSpeed(Str)&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font&gt;SetSpeed(float)&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;SetText(str)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;GenerateData()&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="1190" y="585" width="235" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-43" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;IASR&lt;/b&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;Work():str&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="1820" y="120" width="120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-44" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;VoskASR&lt;/b&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;audio_queue:Queue&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;AudioCallBack(indata,frames,time,status)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;StartListening(model_path:str)&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="1500" y="405" width="350" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-48" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=3;endSize=3.6666666666666665;endWidth=9.333333333333334;" parent="1" source="WLQ1DPpfnMQkfatMCHS5-39" target="WLQ1DPpfnMQkfatMCHS5-41" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1460" y="550" as="sourcePoint" />
+            <mxPoint x="1533" y="551" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-49" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="WLQ1DPpfnMQkfatMCHS5-44" target="WLQ1DPpfnMQkfatMCHS5-43" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1390" y="560" as="sourcePoint" />
+            <mxPoint x="1440" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-51" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;NoASR&lt;/b&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="1920" y="405" width="220" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-52" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="WLQ1DPpfnMQkfatMCHS5-51" target="WLQ1DPpfnMQkfatMCHS5-43" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1910" y="380" as="sourcePoint" />
+            <mxPoint x="2029" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-53" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Controller&lt;/b&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;GetUserMessage():str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;GetResponseFromLLM(str):str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;UseTTS(str)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;PrintResponse(str)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;PlayAudio(Bytes)&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="1165" y="-210" width="260" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-54" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=3;endSize=3.6666666666666665;endWidth=9.333333333333334;" parent="1" source="WLQ1DPpfnMQkfatMCHS5-53" target="WLQ1DPpfnMQkfatMCHS5-31" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="970" y="280" as="sourcePoint" />
+            <mxPoint x="971" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-55" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=3;endSize=3.6666666666666665;endWidth=9.333333333333334;" parent="1" source="WLQ1DPpfnMQkfatMCHS5-53" target="WLQ1DPpfnMQkfatMCHS5-33" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1220" y="230" as="sourcePoint" />
+            <mxPoint x="940" y="415" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-56" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=3;endSize=3.6666666666666665;endWidth=9.333333333333334;entryX=0.05;entryY=0.412;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="WLQ1DPpfnMQkfatMCHS5-53" target="WLQ1DPpfnMQkfatMCHS5-43" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1780" y="-10" as="sourcePoint" />
+            <mxPoint x="1500" y="175" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-57" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;View&lt;/b&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;printStr(str)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;playAudio(Bytes)&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="1670" y="-200" width="230" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="WLQ1DPpfnMQkfatMCHS5-58" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=3;endSize=3.6666666666666665;endWidth=9.333333333333334;" parent="1" source="WLQ1DPpfnMQkfatMCHS5-53" target="WLQ1DPpfnMQkfatMCHS5-57" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1600" y="170" as="sourcePoint" />
+            <mxPoint x="2001" y="388" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

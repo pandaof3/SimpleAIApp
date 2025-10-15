@@ -1,0 +1,129 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36" version="28.0.6">
+  <diagram name="第 1 页" id="oyyt9oHX1vDnbIiPGEaJ">
+    <mxGraphModel dx="1055" dy="720" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="qSpYFP_OCighDt_y1l8K-5" value="MessageRole" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="274" y="1070" width="140" height="80" as="geometry">
+            <mxRectangle x="340" y="370" width="110" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qSpYFP_OCighDt_y1l8K-8" value="USER&lt;div&gt;ASSISTANT&lt;/div&gt;&lt;div&gt;SYSTEM&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="qSpYFP_OCighDt_y1l8K-5">
+          <mxGeometry y="26" width="140" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="qSpYFP_OCighDt_y1l8K-9" value="Message" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="264" y="930" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="qSpYFP_OCighDt_y1l8K-10" value="str:content" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="qSpYFP_OCighDt_y1l8K-9">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="qSpYFP_OCighDt_y1l8K-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="qSpYFP_OCighDt_y1l8K-9">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="qSpYFP_OCighDt_y1l8K-12" value="to_dict():dict&lt;div&gt;CalcEstimatedTokens():int&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="qSpYFP_OCighDt_y1l8K-9">
+          <mxGeometry y="60" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qSpYFP_OCighDt_y1l8K-15" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;width=4;endSize=1.8133333333333335;endWidth=8;" edge="1" parent="1" source="qSpYFP_OCighDt_y1l8K-12" target="qSpYFP_OCighDt_y1l8K-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="444" y="1030.002" as="sourcePoint" />
+            <mxPoint x="402.5999999999999" y="1065.984" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qSpYFP_OCighDt_y1l8K-17" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&lt;i&gt;ContextManager&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;max_tokens:int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;max_messages:int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;estimated_tokens:int&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;i&gt;&lt;u&gt;EstimateTokens():int&lt;/u&gt;&lt;/i&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;AddMessage(Message)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;ClearContext()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;SetSystemMessage(sys_msg:str)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;GenerateMessages():List[Message]&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="234" y="570" width="220" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="qSpYFP_OCighDt_y1l8K-21" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ContextManagerForEnglishOnly&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;EstimateTokens():int&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="244" y="790" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qSpYFP_OCighDt_y1l8K-22" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="qSpYFP_OCighDt_y1l8K-21" target="qSpYFP_OCighDt_y1l8K-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="394" y="820" as="sourcePoint" />
+            <mxPoint x="444" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qSpYFP_OCighDt_y1l8K-23" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=4;endSize=1.8133333333333335;endWidth=8;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="qSpYFP_OCighDt_y1l8K-21" target="qSpYFP_OCighDt_y1l8K-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="324" y="890" as="sourcePoint" />
+            <mxPoint x="324" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qSpYFP_OCighDt_y1l8K-24" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=4;endSize=1.8133333333333335;endWidth=8;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="qSpYFP_OCighDt_y1l8K-21" target="qSpYFP_OCighDt_y1l8K-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="334" y="910" as="sourcePoint" />
+            <mxPoint x="361" y="970" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qSpYFP_OCighDt_y1l8K-25" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Payload&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;model:str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;stream:bool&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;SetModel(model:str)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;SetStream(bool)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;GenerateMessages()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;AddMessage(str)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;SetSystemMessage(str)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;GeneratePayload()&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="50" y="340" width="156" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="qSpYFP_OCighDt_y1l8K-26" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=4;endSize=1.8133333333333335;endWidth=8;" edge="1" parent="1" source="qSpYFP_OCighDt_y1l8K-25" target="qSpYFP_OCighDt_y1l8K-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="125.5" y="490" as="sourcePoint" />
+            <mxPoint x="160" y="920" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="130" y="800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qSpYFP_OCighDt_y1l8K-27" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=4;endSize=1.8133333333333335;endWidth=8;" edge="1" parent="1" source="qSpYFP_OCighDt_y1l8K-25" target="qSpYFP_OCighDt_y1l8K-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="880" as="sourcePoint" />
+            <mxPoint x="467" y="940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qSpYFP_OCighDt_y1l8K-28" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;[]&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="315" y="863" width="30" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qSpYFP_OCighDt_y1l8K-29" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;[]&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="130" y="775" width="30" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qSpYFP_OCighDt_y1l8K-30" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;LLM&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;url:str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;model:str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;stream:bool&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;SetModel(str)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;SetUrl(str)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;SetStream(bool)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;ChangePayload()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;Chat(str)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;SetSysMsg(str)&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="250" y="170" width="160" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="qSpYFP_OCighDt_y1l8K-31" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=4;endSize=1.8133333333333335;endWidth=8;" edge="1" parent="1" source="qSpYFP_OCighDt_y1l8K-30" target="qSpYFP_OCighDt_y1l8K-25">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310" y="540" as="sourcePoint" />
+            <mxPoint x="368" y="602" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qSpYFP_OCighDt_y1l8K-32" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;TTSData&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;text:str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;text_lang:str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;ref_audio_path:str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;prompt_text:str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;prompt_lang:str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;speed_factor:float&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;SetText(str)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;SetSpeed(float)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;GenerateData()&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="490" y="380" width="160" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="qSpYFP_OCighDt_y1l8K-33" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;TTS&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;url:str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;headers:str&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;SetText(str)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;SetSpeed(Str)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;MakeRequest()&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="490" y="200" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="qSpYFP_OCighDt_y1l8K-34" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=4;endSize=1.8133333333333335;endWidth=8;" edge="1" parent="1" source="qSpYFP_OCighDt_y1l8K-33" target="qSpYFP_OCighDt_y1l8K-32">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="441" y="390" as="sourcePoint" />
+            <mxPoint x="414" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qSpYFP_OCighDt_y1l8K-35" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ASR&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;audio_queue:Queue&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;AudioCallBack(indata,frames,time,status)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;StartListening(model_path:str)&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="690" y="210" width="240" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="qSpYFP_OCighDt_y1l8K-36" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Test&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="454" y="30" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qSpYFP_OCighDt_y1l8K-37" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=4;endSize=1.8133333333333335;endWidth=8;" edge="1" parent="1" source="qSpYFP_OCighDt_y1l8K-36" target="qSpYFP_OCighDt_y1l8K-33">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="544" y="250" as="sourcePoint" />
+            <mxPoint x="500" y="286" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qSpYFP_OCighDt_y1l8K-38" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=4;endSize=1.8133333333333335;endWidth=8;" edge="1" parent="1" source="qSpYFP_OCighDt_y1l8K-36" target="qSpYFP_OCighDt_y1l8K-30">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="424" y="100" as="sourcePoint" />
+            <mxPoint x="380" y="136" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qSpYFP_OCighDt_y1l8K-39" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=4;endSize=1.8133333333333335;endWidth=8;" edge="1" parent="1" source="qSpYFP_OCighDt_y1l8K-36" target="qSpYFP_OCighDt_y1l8K-35">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="844" y="110" as="sourcePoint" />
+            <mxPoint x="800" y="146" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
