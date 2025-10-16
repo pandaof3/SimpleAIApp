@@ -12,6 +12,14 @@ class GSV():
         self.data.SetText(text)
     def SetSpeed(self, speed:float):
         self.data.SetSpeed(speed)
+    def SetTextLang(self, lang:str):
+        self.data.SetTextLang(lang)
+    def SetRefAudioPath(self,path:str):
+        self.data.SetRefAudioPath(path)
+    def SetPromptText(self, text:str):
+        self.data.SetPromptText(text)
+    def SetPromptLang(self,lang:str):
+        self.data.SetPromptLang(lang)
     def Work(self,msg:str):
         self.SetText(msg)
         response = requests.post(self.url,json=self.data.GenerateData(),headers=self.headers)

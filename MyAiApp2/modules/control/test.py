@@ -9,6 +9,11 @@ if __name__ == "__main__":
     llm = OllamaLLM()
     tts = GSV()
     tts.SetUrl(config["GSV"]["url"])
+    tts.SetTextLang(config["GSV"]["text_lang"])
+    tts.SetPromptLang(config["GSV"]["prompt_lang"])
+    tts.SetPromptText(config["GSV"]["prompt_text"])
+    tts.SetRefAudioPath(config["GSV"]["ref_audio_path"])
+
     tts.SetSpeed(config["GSVOptions"].getfloat("speed_factor"))
     audio_player = AudioPlayer()
     llm.SetUrl(config["Ollama"]["Ollama_url"])
