@@ -2,8 +2,9 @@ from modules.interfaces.LLM import ILLM
 from modules.models.Ollama.ContextManager import ContextManager
 from typing import TypeVar
 import requests
-
+import configparser
 from modules.models.Ollama.message import MessageRole
+from modules.utils.ConfigReader import ConfigReader
 T = TypeVar('T')
 class OllamaLLM(ILLM):
     url:str = ""
@@ -11,19 +12,25 @@ class OllamaLLM(ILLM):
     stream:bool = False
     options:dict = {}
     contextmanager = ContextManager()
+    
+    def __init__(self, config):
+        self.configReader = ConfigReader(config)
+        self.SetNecessities(config)
+        self.SetOptions(config)
+    def SetNecessities(self,config:configparser.ConfigParser):
+        self.url = config["Ollama"]["Ollama_url"]
+        self.model = config["Ollama"]["Ollama_model"]
+        if config["Ollama"]["system_message"] != "":
+            self.contextmanager.SetSystemMessage(config["Ollama"]["system_message"])
+        self.stream = config["Ollama"].getboolean("stream")
+    def SetOptions(self,config:configparser.ConfigParser):
+        for keys in config["OllamaOptions"]:
+            value = self.configReader.ReadByKey("OllamaOptions",keys)
+            if value is not None:
+                self.SetOption(keys,value)
 
-    def SetUrl(self, url:str):
-        self.url = url
-    def SetModel(self, model:str):
-        self.model = model
-    def SetStream(self, stream:bool):
-        self.stream = stream
     def SetOption(self, key:str, value:T):
         self.options[key] = value
-    def RemoveOption(self, key:str):
-        self.options.pop(key, 0)
-    def SetSysMsg(self, msg:str):
-        self.contextmanager.SetSystemMessage(msg)
     def GeneratePayload(self):
         return {
             "model": self.model,

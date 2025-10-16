@@ -38,11 +38,12 @@
     <Compile Include="modules\interfaces\LLM.py" />
     <Compile Include="modules\interfaces\TTS.py" />
     <Compile Include="modules\models\GSV\GSV.py" />
-    <Compile Include="modules\models\GSV\TTSData.py" />
+    <Compile Include="modules\models\GSV\GSVData.py" />
     <Compile Include="modules\models\Ollama\ContextManager.py" />
     <Compile Include="modules\models\Ollama\message.py" />
     <Compile Include="modules\models\Ollama\OllamaLLM.py" />
     <Compile Include="modules\utils\EstTokenCalcForEnglish.py" />
+    <Compile Include="modules\utils\ConfigReader.py" />
     <Compile Include="modules\view\AudioPlayer.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
