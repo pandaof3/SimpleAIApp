@@ -44,6 +44,7 @@
     <Compile Include="modules\models\Ollama\OllamaLLM.py" />
     <Compile Include="modules\utils\EstTokenCalcForEnglish.py" />
     <Compile Include="modules\utils\ConfigReader.py" />
+    <Compile Include="modules\utils\TextSplitter.py" />
     <Compile Include="modules\view\AudioPlayer.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
