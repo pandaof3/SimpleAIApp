@@ -1,5 +1,5 @@
 import abc
 class IASR:
     @abc.abstractmethod
-    def Work()->str:
+    def Work(self)->str:
         pass

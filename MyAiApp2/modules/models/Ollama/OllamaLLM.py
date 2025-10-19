@@ -12,6 +12,7 @@ class OllamaLLM(ILLM):
     stream:bool = False
     options:dict = {}
     contextmanager = ContextManager()
+    secession = requests.Session()
     
     def __init__(self, config):
         self.configReader = ConfigReader(config)
@@ -40,8 +41,11 @@ class OllamaLLM(ILLM):
         }
     def Chat(self, msg:str)->str:
         self.contextmanager.AddMessage(msg,MessageRole.USER)
-        response = requests.post(self.url, json = self.GeneratePayload())
+        response = self.secession.post(self.url, json = self.GeneratePayload())
         res_msg: str = response.json()["message"]["content"]
         self.contextmanager.AddMessage(res_msg, MessageRole.ASSISTANT)
         return res_msg
+    def PreLoad(self):
+        self.Chat("preloading")
+        self.contextmanager.ClearContext()
         

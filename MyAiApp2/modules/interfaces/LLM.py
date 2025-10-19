@@ -15,3 +15,6 @@ class ILLM:
     def __init__(self,config:configparser.ConfigParser):
         self.SetNecessities(config)
         self.SetOptions(config)
+    @abc.abstractmethod
+    def PreLoad():
+        pass

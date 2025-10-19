@@ -1,7 +1,7 @@
 import abc
 import configparser
 from logging import config
-class ITTS:
+class ITTS(abc.ABC):
     @abc.abstractmethod
     #should return a stream of bytes
     def Work(self,msg:str):
@@ -15,3 +15,6 @@ class ITTS:
     def __init__(self,config:configparser.ConfigParser):
         self.SetNecessities(config)
         self.SetOptions(config)
+    @abc.abstractmethod
+    def PreLoad(self):
+        pass

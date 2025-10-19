@@ -19,7 +19,8 @@ def AsyncTTS(tts:ITTS,audio_player:AudioPlayer, SQueue:queue.Queue,AudioQueue:qu
 def AsyncPlayAudio(audio_player:AudioPlayer,AudioQueue:queue.Queue):
     while audio_player.Playing():
         sleep(0.1)
-    audio_player.Play(AudioQueue.get())
+    audio_data = AudioQueue.get()
+    audio_player.Play(audio_data)
     return;
 
 if __name__ == "__main__":
@@ -29,13 +30,17 @@ if __name__ == "__main__":
     tts = GSV(config)
     audio_player = AudioPlayer()
     text_splitter = TextSplitter()
+
+    #preload LLM and TTS
+    
+    tts.PreLoad()
     while(True):
         newMsg = str(input())
         res = llm.Chat(newMsg)
         sentences = TextSplitter().SplitText(res)
         SQueue = queue.Queue()
         for sentence in sentences:
-            SQueue.put(sentence)
+            SQueue.put("."+sentence)
         AudioQueue = queue.Queue()
         print(res+"\n")
         thread = threading.Thread(target=AsyncTTS,args=(tts,audio_player, SQueue,AudioQueue))
